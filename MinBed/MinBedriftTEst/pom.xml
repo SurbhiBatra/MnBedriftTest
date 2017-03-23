@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.telia.mb</groupId>
+  <artifactId>MinBedriftTEst</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+		<java-version>1.8</java-version>
+		<selenium-version>2.53.0</selenium-version>
+  </properties>
+  <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.3.4.RELEASE</version>
+        </dependency>
+        <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-version}</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.seleniumhq.selenium</groupId>
+		  <artifactId>selenium-server</artifactId>
+		  <version>${selenium-version}</version>
+		</dependency>
+		 <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.5</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 		    <groupId>com.google.api-client</groupId> -->
+<!-- 		    <artifactId>google-api-client-assembly</artifactId> -->
+<!-- 		    <version>1.22.0</version> -->
+<!-- 		</dependency> -->
+		<dependency>
+		    <groupId>com.google.apis</groupId>
+		    <artifactId>google-api-services-oauth2</artifactId>
+		    <version>v2-rev110-1.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.oauth-client</groupId>
+			<artifactId>google-oauth-client-jetty</artifactId>
+			<version>1.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-drive</artifactId>
+			<version>v3-rev25-1.22.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.dropbox.core</groupId>
+		    <artifactId>dropbox-core-sdk</artifactId>
+		    <version>2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-configuration2</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+    </dependencies>
+	<build>
+        <plugins>
+            <!-- <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
+            <plugin>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <configuration>
+		            <version>2.3.2</version>
+		        </configuration>
+		    </plugin>
+        </plugins>
+    </build>
+</project>
