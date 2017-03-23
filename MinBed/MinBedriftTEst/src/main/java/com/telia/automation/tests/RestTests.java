@@ -19,5 +19,5 @@ public class RestTests {
 
    @Test
    public void filterByMetaDataCheckTest() {
-       ArrayList<String> metadataList = client.GetData();    
+ //      ArrayList<String> metadataList = client.GetData();    
 }}
